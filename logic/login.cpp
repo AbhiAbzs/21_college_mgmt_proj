@@ -33,6 +33,8 @@ void logIn(int n)
         /*  case 2:if(n=2){
             facultyLogin();
         }
+
+        
          break;
         case 3:if(n=3){
             adminLogin();
