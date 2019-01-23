@@ -11,6 +11,10 @@ main(int argc, char const *argv[])
 	int col_ch_opt = 0, stu_ch_opt = 0;
 	do
 	{
+		if (col_ch_opt != 0)
+		{
+			col_ch_opt = college_dsp();
+		}
 		col_ch_opt = college_dsp();
 		if (col_ch_opt == 1)
 		{

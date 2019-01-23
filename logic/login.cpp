@@ -1,5 +1,23 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+
+//My Inclusion
+#include "../view/login_dsp.cpp"
+#include "../declerations.cpp"
+
+class Login
+{
+private:
+    col_member type;
+public:
+    Login(col_member);
+    bool isLoggedIn();
+};
+
+Login::Login(col_member type)
+{
+    type=type;
+}
 
 void logIn(int n)
 {

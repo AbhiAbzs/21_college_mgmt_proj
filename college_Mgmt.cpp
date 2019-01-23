@@ -1,10 +1,12 @@
 #include <iostream>
 #include <fstream>
 // #include <string>
+using namespace std;
 
 //My Inclusion
 #include "./view/college_dsp.cpp"
 #include "./view/student_dsp.cpp"
+#include "./logic/login.cpp"
 
 main(int argc, char const *argv[])
 {
@@ -16,6 +18,7 @@ main(int argc, char const *argv[])
 		switch (col_ch_opt)
 		{
 		case 1:
+			
 			stu_ch_opt=student_dsp();
 			break;
 		case 4:
