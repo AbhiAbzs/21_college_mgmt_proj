@@ -1,13 +1,12 @@
 #include <iostream>
-#include <utility>
-//#include<array>
-//#include<list>
-//#include<map>
-//#include<set>
 using namespace std;
+
+//My Inclusion
+#include "login.cpp"
+
 void studentDetails();
 void option(int n);
-class Student
+class Student : public Login
 {
       private:
         int id = 0;
@@ -15,7 +14,9 @@ class Student
         string email;
         string mob;
         string address;
+
       public:
+        Student(){};
         Student(int id, string name, string email, string mob, string address)
         {
                 this->id = id;

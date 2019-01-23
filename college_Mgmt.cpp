@@ -6,6 +6,7 @@ using namespace std;
 //My Inclusion
 #include "./view/college_dsp.cpp"
 #include "./view/student_dsp.cpp"
+#include "./logic/student.cpp"
 #include "./logic/login.cpp"
 
 main(int argc, char const *argv[])

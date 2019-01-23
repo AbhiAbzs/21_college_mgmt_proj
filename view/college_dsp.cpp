@@ -17,5 +17,6 @@ int college_dsp()
     cout << "\n\n\t\t\t\t Enter your choice:  ";
     cin >> col_ch_opt;
     system("clear");
+    cin.ignore();
     return col_ch_opt;
 }

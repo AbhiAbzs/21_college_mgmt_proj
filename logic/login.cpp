@@ -7,19 +7,21 @@ using namespace std;
 
 class Login
 {
-private:
+  private:
     col_member type;
-public:
+
+  public:
+    Login();
     Login(col_member);
     bool isLoggedIn();
 };
 
 Login::Login(col_member type)
 {
-    type=type;
+    type = type;
 }
 
-void logIn(int n)
+void isLoggedIn(int n)
 {
 
     switch (n)
@@ -33,8 +35,6 @@ void logIn(int n)
         /*  case 2:if(n=2){
             facultyLogin();
         }
-
-        
          break;
         case 3:if(n=3){
             adminLogin();
