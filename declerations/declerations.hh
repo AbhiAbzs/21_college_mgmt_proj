@@ -3,7 +3,7 @@
  *  will delete later when each classes will be made for each entity.
  * */
 
-enum col_member
+enum coll_member
 {
     student,
     faculty,

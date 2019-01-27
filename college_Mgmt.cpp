@@ -11,16 +11,18 @@ using namespace std;
 
 main(int argc, char const *argv[])
 {
-	int col_ch_opt = 0;
-	int stu_ch_opt=0;
+	int coll_ch_opt = 0;
+	int stud_ch_opt = 0;
 	do
 	{
-		col_ch_opt = college_dsp();
-		switch (col_ch_opt)
+		coll_ch_opt = college_dsp();
+		switch (coll_ch_opt)
 		{
 		case 1:
-			
-			stu_ch_opt=student_dsp();
+			stud_ch_opt = student_dsp();
+			break;
+		case 3:
+
 			break;
 		case 4:
 			system("clear");
@@ -30,7 +32,7 @@ main(int argc, char const *argv[])
 			cout << "\n\t\t\tPlease select a valid option.\n";
 			break;
 		}
-	} while (col_ch_opt != 4);
+	} while (coll_ch_opt != 4);
 
 	return 0;
 }

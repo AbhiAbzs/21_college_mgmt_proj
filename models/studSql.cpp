@@ -17,7 +17,7 @@ static int callback(void *data, int argc, char **argv, char **azColName)
    return 0;
 }
 
-void stud_db_create();
+/* void stud_db_create();
 void stud_db_create_table();
 void stud_db_view();
 void stud_db_insert();
@@ -38,55 +38,7 @@ int main(int argc, char *argv[])
    stud_db_delete(id);
    stud_db_view();
    return 0;
-}
-
-//Database Creation
-void stud_db_create()
-{
-   sqlite3 *db;
-   int rc;
-
-   rc = sqlite3_open("./college_db/college.db", &db);
-
-   if (rc)
-   {
-      cerr << "Can't open database: \n"
-           << sqlite3_errmsg(db);
-      exit(0);
-   }
-   else
-   {
-      cout << "Opened database successfully\n";
-   }
-   sqlite3_close(db);
-}
-
-//table creation
-void stud_db_create_table()
-{
-   string query;
-   // Sql query to create student database
-   query = "CREATE TABLE Student("
-           "ID INT PRIMARY KEY NOT NULL,"
-           "Name TEXT NOT NULL,"
-           "Email INT NOT NULL,"
-           "Mobile INT NOT NULL,"
-           "Address CHAR(50));";
-   sqlite3 *db;
-   int rc = sqlite3_open("./college_db/college.db", &db);
-   char *errorMsg;
-   rc = sqlite3_exec(db, query.c_str(), NULL, 0, &errorMsg);
-
-   if (rc != SQLITE_OK)
-   {
-      cerr << "Error Create Table\n"
-           << sqlite3_errmsg(db) << endl;
-      // sqlite3_free(errorMsg);
-   }
-   else
-      cout << "Table created Successfully" << endl;
-   sqlite3_close(db);
-}
+} */
 
 //View student table
 void stud_db_view()
@@ -141,6 +93,5 @@ void stud_db_delete(int id)
    }
    else
       cout << "Record deleted Successfully!" << endl;
-
    sqlite3_close(db);
 }
